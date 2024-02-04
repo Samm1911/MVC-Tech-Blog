@@ -1,0 +1,81 @@
+:root{
+    --main-bg-color: rgb(44, 34, 34);
+    --brightgreen: rgb(179, 218, 174);
+    --lightgrey:  rgb(168, 182, 185);
+}
+
+
+.tech {
+    font-weight: bold;
+    border: 2px solid var(--brightgreen);
+    border-radius: 8%;
+    padding: 0.5rem;
+    color: var(--main-bg-color);
+    background-color: var(--brightgreen);
+    box-shadow: 5px 5px var(--lightgrey);
+}
+
+.link {
+    color: var(--brightgreen);
+}
+
+.nav-link:hover {
+    color: aqua;
+}
+
+body {
+    background-color: var(--brightgreen);
+}
+
+.header {
+    background-color: var(--main-bg-color);
+}
+
+.card {
+    margin: 2rem;
+    background-color: var(--brightgreen);
+    border: 2px solid var(--main-bg-color);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    background-color: var(--main-bg-color);
+    color: var(--lightgrey)
+}
+
+.blogs {
+    text-decoration: none;
+}
+
+.authbtn {
+    background-color: var(--lightgrey);
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.authlink {
+    text-decoration: none;
+}
+
+.createbtn {
+    background-color: var(--lightgrey);
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.comment-form {
+    width: 100%;
+}
+
+.create-edit-delete {
+    background-color: var(--lightgrey);
+    margin: 0.5rem 0;
+    width: 100%;
+}
+
+.newPostBtn {
+    background-color: var(--main-bg-color);
+    color: white;
+}

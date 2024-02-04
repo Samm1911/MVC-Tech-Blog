@@ -1,0 +1,49 @@
+<div class="card">
+    <div class="card-header">
+        {{!-- get the blog title of the blog--}}
+        {{title}}
+    </div>
+    <div class="card-body">
+        <div class="row justify-content-center">
+            {{!-- blogtitle, contents--}}
+            <h2 id="blogtitle">{{title}}</h2>
+            <p id="contents">{{contents}}</p>
+            {{!-- display user who created blog and on what date --}}
+            <p>Created by <b>{{user.username}}</b> on <em>{{format_date created_date}}</em>
+            </p>
+
+            <div class="border-primary rounded lightBlue d-flex">
+
+                <div class="comment-form">
+                    <textarea class="form-control" id="comment" placeholder="Write a comment"></textarea>
+                    <button class="btn createbtn" id="submitbtn" data-id="{{id}}">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+{{!-- display comments if existing --}}
+{{#if comments.length}}
+<div class="card">
+    <div class="card-header">
+    </div>
+    <div class="card-body">
+
+{{!-- each comment is displayed --}}
+        <h3 id="blogname">Comments:</h3>
+        {{#each comments as |comment|}}
+        <div class="col-10">
+            {{!-- get the owners username of comment and the comments content --}}
+            <p> <span> <strong>{{user.username}}:</strong> </span>{{comment.contents}}</p>
+        </div>
+        <div class="col">
+            {{!-- get the created date of comment and format with format_date helper --}}
+            <p>{{format_date comment.date_created}}</p>
+        </div>
+        {{/each}}
+    </div>
+</div>
+{{/if}}
+<script src="/js/blog.js"></script>

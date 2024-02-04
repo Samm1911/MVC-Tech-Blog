@@ -1,0 +1,17 @@
+{{!-- display each blog from the blogs array --}}
+{{#each blogs as |blog|}}
+{{!-- each blog is a link that redirects to each blog and their comments--}}
+<a href="/blogs/{{blog.id}}" class="blogs">
+  <div class="card">
+    <div class="card-header">
+      {{!-- get the blog title, the user name and the created date--}}
+      <h4>{{blog.title}}</h4>
+      <p>Posted by {{blog.user.username}} on {{format_date blog.created_date}}</p>
+    </div>
+    <div class="card-body">
+      {{!-- get the blog content as well --}}
+      <p class="card-text">{{blog.contents}}</p>
+    </div>
+  </div>
+</a>
+{{/each}}

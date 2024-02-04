@@ -1,0 +1,24 @@
+{{!-- display blogs it existing --}}
+{{#if blogs.length}}
+{{!-- each blog from the blogs array --}}
+{{#each blogs as |blog|}}
+<div class="card">
+
+{{!-- get the id of blog to redirect user to edit blog based on id --}}
+    <a href="/editBlog/{{blog.id}}" class="blogs">
+        <div class="card-header">
+            {{!-- get the title --}}
+            <h4>{{blog.title}}</h4>
+            {{!-- and the created date --}}
+            <p>{{format_date blog.created_date}}</p>
+        </div>
+    </a>
+
+</div>
+{{/each}}
+{{/if}}
+<div class="position-absolute bottom-0 start-50 translate-middle-x">
+    <button class="btn newPostBtn" id="create">+ New Post</button>
+</div>
+
+<script src="/js/dashboard.js"></script>
