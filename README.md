@@ -13,15 +13,19 @@ N/A
 # Usage
 
 When you open the application, you will be presented with the homepage, which shows you the current blogs and links to the home, dashboard, and log-in.
+
 ![pix](https://github.com/Samm1911/MVC-Tech-Blog/blob/main/Pix/1.png?raw=true)
 
 You can see each blog show's title, content, author, and the date on which it was created.
+
 ![pix](https://github.com/Samm1911/MVC-Tech-Blog/blob/main/Pix/2.png?raw=true)
 
 If you click any of the links or the blogs, you will be redirected to the login page or you can simply just click on the login link.
+
 ![pix](https://github.com/Samm1911/MVC-Tech-Blog/blob/main/Pix/3.png?raw=true)
 
 Once you reach the page you can either log in if you have an existing account, otherwise click on the link to sign up instead.
+
 ![pix](https://github.com/Samm1911/MVC-Tech-Blog/blob/main/Pix/4.png?raw=true)
 
 ![pix](https://github.com/Samm1911/MVC-Tech-Blog/blob/main/Pix/5.png?raw=true)
